@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Order Form | Online Clock Repair</title>
+    <meta charset="utf-8" />
+    <link href="../css/styles.css" rel="stylesheet" media="screen" />
+</head>
+<body>
+    <header>
+        <img src="../img/clock-logo.png" alt="Online Clock Repair Logo" width="150px" length="150px" />
+        <h1>Online Clock Repair</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Online Clock Repair Home">Home</a></li>
+                <li><a href="aboutus.html" title="About Us">About Us</a></li>
+                <li><a href="services.html" title="Services">Services</a></li>
+                <li><a href="orderfrm.html" title="Order Form">Order</a></li>
+                <li><a href="contact.html" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Please Enter your Order Information</h2>
+        <form id="Order-Info" method="post" action="Order-Info.php">
+            <input type="hidden" name="form_sent" value="1" />
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for= "fname">First Name:</label>
+                <input type="text" name="fname" id="fname" size="25" maxlength="30" placeholder= "Enter your first name" required />
+                <label for= "lname">Last Name:</label>
+                <input type="text" name="lname" id="lname" size="25" maxlength="30" placeholder= "Enter your last name" required />
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder= "Enter your home address" required />
+                <label for="province">Province:</label>
+                <select id="province" name="province">
+                    <option value="choose">Choose...</option>
+                    <option value="AB">Alberta</option>
+                    <option value="BC">British Colombia</option>
+                    <option value="ON">Ontario</option>
+                    <option value="MB">Manitoba</option>
+                    <option value="NB">New Brunswick</option>
+                    <option value="NL">Newfoundland</option>
+                    <option value="NT">Northwest Territories</option>
+                    <option value="NS">Nova Scotia</option>
+                    <option value="NV">Nunavut</option>
+                    <option value="PE">Prince Edward Island</option>
+                    <option value="PQ">Québec</option>
+                    <option value="SK">Saskatchewan</option>
+                    <option value="YK">Yukon</option>
+                </select>
+                <label for="postalcode">Postal Code:</label>
+                <input type="text" id="postalcode" size="25" maxlength="6" placeholder= "Enter your postal code" />
+                <label for= "phone">Telephone:</label>
+                <input type= "tel" name="phone" id="phone" pattern="\d{3}-\d{3 }-\d{4}" placeholder="Enter your phone number" required />
+            </fieldset>
+            <fieldset id=clocktype>
+                <legend>Clock Type</legend>
+                    <label for="watch">Wrist Watch</label>
+                    <input type="radio" name="type" id="watch" value="watch" />
+                    <label for="clock">Wall Clock</label>
+                    <input type="radio" name="type" id="clock" value="clock" />
+                    <label for="grandfather">Grandfather Clock</label>
+                    <input type="radio" name="type" id="grandfather" value="grandfather" />
+                    <label for="cuckoo">Cuckoo Clock</label>
+                    <input type="radio" name="type" id="cuckoo" value="cuckcoo" />
+            </fieldset>
+            <fieldset>
+                <legend>Shipping or Pick Up</legend>
+                    <label for="shipping">Shipping</label>
+                    <input type="radio" name="shiporpick" id="shipping" value="shipping" />
+                    <label for="pickup">Pick Up</label>
+                    <input type="radio" name="shiporpick" id="pickup" value="pickup" />
+            </fieldset>
+            <p id=shipping>If you are shipping your item, send it to:</br>1345 Watchworth cres.<br>Watchington, Watchon</br>W4t 7H1</p>
+            <input type="submit" id=submit />
+          </form>
+    </main>
+    <footer>
+        <p><small>Copyright Online Clock Repair &reg;</small></p>
+    </footer>
+</body>
+</html>

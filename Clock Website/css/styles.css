@@ -1,0 +1,91 @@
+@charset "utf-8";
+/*Page styles*/
+body {
+    background-color: lightblue;
+}
+/*Header and Logo*/
+header {
+    background-color: white;
+    width: 900px;
+    height: 150px;
+    margin: 50px auto 0 auto;
+    padding: 10px;
+}
+header h1 {
+    margin: 50px;
+    padding-left: 150px;
+}
+header img {
+    float: left;
+}
+
+/* Global Navigation Styles*/
+nav {
+    clear: both;
+    width: 900px;
+    position: relative;
+    left:140px;
+    top:-30px;
+}
+nav li {
+    float: left;
+    list-style-type: none;
+    padding: 20px 35px;
+    background-color: white;
+    border-style: double;
+}
+nav li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+/*Body Content Styles*/
+main {
+    clear: both;
+    width: 950px;
+    margin: 50px auto 0 auto;
+    padding: 10px 10px;
+    position: relative;
+    top: 0px;
+    background-color: white;
+}
+main p {
+    font-size: 150%;
+}
+#home img {
+    float: right;
+}
+#aboutus img {
+    float:right;
+}
+#services img {
+    float:right;
+}
+#contact img{
+    float: right;
+}
+/*Form Styles*/
+fieldset {
+    margin-bottom: 10px;
+}
+label {
+    display: block;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+input, select {
+    display: block;
+    margin-left:10px;
+}
+#shipping {
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 20px;
+}
+#submit {
+    margin-top: 10px;
+}
+/*Footer Styles*/
+footer {
+    text-indent: 1250px;
+    
+}

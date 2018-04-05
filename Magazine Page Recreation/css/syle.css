@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+/*Master Page Styles-------------------------------*/
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    width: 820px;;
+    margin: 0 auto;
+}
+
+/*Heading styles----------------------------------*/
+h1 {
+    font-size: 15px;
+    color: orange;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 15px;
+    margin: 0;
+    
+}
+#heading {
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: lowercase;
+    text-align: center;
+    margin-top: 10px;
+}
+#heading {
+    text-transform: capitalize;
+}
+
+strong {
+    color: orange;
+}
+/*Paragraphs styles-------------------------------*/
+article p {
+    margin: 0;
+}
+#paragraph {
+    text-align: center;
+}
+.half2 p:last-of-type {
+    font-weight: bold;
+}
+
+/*Footer Styles-----------------------------------*/
+footer {
+    text-transform: uppercase;
+    font-style: normal;
+}
+footer small {
+    font-weight: bold;
+}
+footer time {
+    font-weight: normal;
+}
+footer em {
+    font-style: normal;
+}
+/*Positioning-------------------------------------*/
+article  {
+    display: flex;
+}
+.half1 {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin-right: 20px;
+}
+.half2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.container2 {
+    display: flex;
+    margin: 10px;
+}
+.split1 {
+    margin-right: 10px;
+}
+

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8" />
+    <title>Pizza Order Form | Pizza Guy</title>
+    </head>
+    <body>
+        <header>
+        <h1>Pizza Guy</h1>
+        <img src="img/pizza-slice.png" width="200" height="100" alt="Pizza Guy Logo" />
+        <!-- Imaged sourced from http://www.palermospizza.com/our-pizza/pizzeria/pepperoni-pizza -->
+        </header>
+        <main>
+            <h2>Pizza Order Form</h2>
+            <form id="Order_form" method="post" action="order-form.php">
+                <input type="hidden" name="form_sent" value="1" />
+                <fieldset>
+                    <legend>Choose your Size</legend>
+                        <input type="radio" name="size" id="small" value="small" />
+                        <label for="small">Small</label>
+                        <input type="radio" name="size" id="medium" value="medium" />
+                        <label for="medium">Medium</label>
+                        <input type="radio" name="size" id="large" value="large" />
+                        <label for="large">Large</label>
+                        <input type="radio" name="size" id="x-large" value="x-large" /> <label for="x-large">X-Large</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Choose your Shape</legend>
+                        <label for="shape">Shape:</label>
+                        <select id="shape" name="shape" required>
+                            <option value="choose">Choose...</option>
+                            <option value="circle">Circle</option>
+                            <option value="square">Square</option>
+                        </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Choose your Dough</legend>
+                        <input type="radio" name="dough" id="white" value="white" />
+                        <label for="white">White</label>
+                        <input type="radio" name="grain" id="grain" value="grain" />
+                        <label for="grain">Multi-Grain</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Choose your Toppings</legend>
+                        <input type="checkbox" name="topping" id="pepperoni" value="pepperoni" />
+                        <label for="pepperoni">Pepperoni</label>
+                        <input type="checkbox" name="topping" id="mushroom" value="mushroom" />
+                        <label for="mushroom">Mushrooms</label>
+                        <input type="checkbox" name="topping" id="chicken" value="chicken" />
+                        <label for="chicken">Chicken</label>
+                        <input type="checkbox" name="topping" id="baconcrumble" value="baconcrumble" />
+                        <label for="baconcrumble">Bacon Crumble</label>
+                        <input type="checkbox" name="topping" id="olives" value="olives" />
+                        <label for="olives">Olives</label>
+                        <input type="checkbox" name="topping" id="pineapple" value="pineapple" />
+                        <label for="pineapple">Pineapple</label>
+                        <input type="checkbox" name="topping" id="sausage" value="sausage" />
+                        <label for="sausage">Sausage</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Choose your Crust</legend>
+                        <input type="radio" name="crust" id="normal" value="normal" />
+                        <label for="normal">Normal</label>
+                        <input type="radio" name="crust" id="stuffed" value="stuffed" />
+                        <label for="stuffed">Stuffed Crust</label>
+                        <input type="radio" name="crust" id="thin" value="thin" />
+                        <label for="thin">Thin</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div>
+                        <label for= "fname">First Name:</label>
+                        <input type="text" name="fname" id="fname" size="25" maxlength="30" placeholder= "Enter your first name" required />
+                    </div>
+                    <div>
+                        <label for= "lname">Last Name:</label>
+                        <input type="text" name="lname" id="lname" size="25" maxlength="30" placeholder= "Enter your last name" required />
+                    </div>
+                    <div>
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" placeholder= "Enter your home address" required />
+                    </div>
+                    <div>
+                        <label for="province">Province:</label>
+                        <select id="province" name="province">
+                            <option value="choose">Choose...</option>
+                            <option value="AB">Alberta</option>
+                            <option value="BC">British Colombia</option>
+                            <option value="ON">Ontario</option>
+                            <option value="MB">Manitoba</option>
+                            <option value="NB">New Brunswick</option>
+                            <option value="NL">Newfoundland</option>
+                            <option value="NT">Northwest Territories</option>
+                            <option value="NS">Nova Scotia</option>
+                            <option value="NV">Nunavut</option>
+                            <option value="PE">Prince Edward Island</option>
+                            <option value="PQ">Québec</option>
+                            <option value="SK">Saskatchewan</option>
+                            <option value="YK">Yukon</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="postalcode">Postal Code:</label>
+                        <input type="text" id="postalcode" size="25" maxlength="6" placeholder= "Enter your postal code"
+                    </div>
+                    <div>
+                        <label for= "phone">Telephone:</label>
+                        <input type= "tel" name="phone" id="phone" pattern="\d{3}-\d{3 }-\d{4}" placeholder="Enter your phone number" required />
+                    </div>
+                </fieldset>
+                <p>Payment is made when pizza is delivered</p>
+                <input type="submit" />
+                <input type="reset" />
+            </form>
+            <footer>
+                <p><small>Pizza Guy Inc.</small></p>
+            </footer>
+        </main>
+    </body>
+    <!-- Coded By Andrew Brough -->
+</html>

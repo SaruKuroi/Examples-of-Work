@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+body {
+    font-family: Times New Roman, sans-serif;
+    background-color: orange;  
+}
+
+#page{
+    background-color: white;
+    position: relative;
+    top: 0;
+    width: 960px;
+    height: 160px;
+    border-style: double;
+}
+
+#page img{
+    position: relative;
+    top: -100px;
+}
+
+#page h1{
+    position: relative;
+    left: 200px;
+    top: 40px;
+}
+
+#poster img{
+    position: relative;
+    top: 50px;
+}
+
+#Title{
+    position: absolute;
+    top: 250px;
+    left: 20px;
+    font-size: 5pt;
+    line-height: 1;
+    color: white;
+}
+#Title strong{
+    font-size:30pt;
+    color: red;
+    line-height:0.5;
+}
+
+#poster main{
+    position: absolute;
+    top: 370px;
+    left: 20px;
+    color: white;
+}
+#poster footer{
+    position: absolute;
+    top: 760px;
+    left: 20px;
+    line-height: 0.5;
+    text-align: right;
+    color: white;
+    font-size:7pt;
+}
+
+#poster footer em{
+    font-style: normal;
+    font-size: 5pt;
+}
+
+#link{
+    position: absolute;
+    top: 870px;
+    font-size:20pt;
+
+}
+

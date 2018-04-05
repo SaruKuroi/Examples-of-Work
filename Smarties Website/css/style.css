@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+
+/* Master Page Styles ----------------------------------------------*/
+html {
+    background-color: rgb(17, 17, 65);
+}
+body {
+    width: 1024px;
+    margin: 0 auto;
+    font-size: 120%;
+    color: white;
+}
+/* Header Flex Box -------------------------------------*/
+header {
+    display: flex;
+    justify-content: centre;
+    height: 200px;
+    background-image: url("../img/smarties-bg.jpg");
+}
+header h1 {
+    position: relative;
+    top: 50px;
+    left: 40px;
+    font-family: "Coiny", sans-serif;
+    
+}
+/* Main Flex Box ---------------------------------------*/
+main {
+    display: flex;
+    
+}
+h2 {
+    font-family: "Coiny", sans-serif;
+} 
+/* Navigation --------------------------------*/
+main nav {
+    flex: 1;
+    background-color: rgb(205, 37, 112);
+    padding-right: 10px;
+}
+main nav li {
+    list-style-type: none;
+    padding-top: 50px;
+}
+main nav li a {
+    text-decoration: none;
+    font-family: "Coiny", sans-serif;
+}
+a:link {
+    color: rgb(213, 19, 46);
+}
+a:visited {
+    color: rgb(240, 202, 25);
+}
+a:hover {
+    color: rgb(218, 94, 22);
+}
+/* Section -----------------------------------*/
+.centre {
+    flex: 3;
+    background-color: rgb(125, 63, 42);
+    padding: 20px;
+}
+
+/* Aside--------------------------------------*/
+main aside {
+    flex: 2;
+    background-color: rgb(114, 87, 158);
+    padding: 20px;
+}
+/* Footer-------------------------------------*/
+footer {
+}

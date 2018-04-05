@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Lab 5 | COMP1054 Web User Interface Design</title>
+	<style>
+		@import url(css/normalize.css);
+		body {
+			background: #CCC;
+		}
+		h1, h2, h3, h4, h5, h6, p {
+			margin-top: 0;
+		}
+		#container {
+			outline: 2px dotted red;
+			margin: 0 auto;
+			width: 80%;
+		}
+		#header {
+			outline: 2px dotted blue;
+			padding: 50px;
+		}
+		/* Initial flexbox around whole content----------------*/
+		main {
+			display: flex;
+		}
+		/* Flex Box around left half of content---------------------*/
+		.column1 {
+			flex: 2;
+			display: flex;
+			flex-direction: column;
+		}
+		/* First row flexbox---------------------*/
+		.box1 {
+			display: flex;
+			flex: 2;
+		}
+		#sidebar1 {
+			outline: 2px dotted green;
+			flex: 2;
+		}
+		#sidebar2 {
+			outline: 2px dotted purple;
+			flex: 1;
+		}
+		/*Second row flex box------------------------*/
+		.box2 {
+			display: flex;
+			flex:1
+		}
+		#sidebar3 {
+			outline: 2px dotted green;
+			flex: 1;
+		}
+		#sidebar4 {
+			outline: 2px dotted purple;
+			flex: 2;
+		}
+		/* Flex Box around right half of content ----------------------*/
+		.column2 {
+			display: flex;
+			flex: 1;
+		}
+		#main {
+			outline: 2px dotted orange;
+		}
+		/* Footer--------------------------------*/
+		#footer {
+			outline: 2px dotted yellow;
+		}
+		.cf:before,
+		.cf:after {
+			content: " "; /* 1 */
+			display: table; 
+		}
+		.cf:after {
+			clear: both;
+		}
+		.cf {
+			*zoom: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<header id="header" role="banner">
+			<h1>In-Class Layout Exercise</h1>
+		</header>
+		<main>
+			<div class="column1">
+				<div class="box1">
+					<div id="sidebar1">
+						<h3>Sub-subheading</h3>
+						<nav role="navigation">
+							<ul>
+								<li><a href="#">Link one</a></li>
+								<li><a href="#">Link two</a></li>
+								<li><a href="#">Link three</a></li>
+								<li><a href="#">Link four</a></li>
+							</ul>
+						</nav>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula, ipsum at placerat ultrices, lectus arcu cursus quam, vitae imperdiet tortor enim id erat. Duis ac sapien massa. Suspendisse potenti.</p>
+					</div><!-- #sidebar1 -->
+					<div id="sidebar2">
+						<h3>Sub-subheading</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula, ipsum at placerat ultrices, lectus arcu cursus quam, vitae imperdiet tortor enim id erat. Duis ac sapien massa. Suspendisse potenti. Quisque vehicula risus vitae justo congue imperdiet. Fusce egestas facilisis quam vitae feugiat.</p>
+					</div><!-- #sidebar2 -->
+				</div><!-- .box1 -->
+				<div class="box2">
+					<div id="sidebar3">
+						<h3>Sub-subheading</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula, ipsum at placerat ultrices, lectus arcu cursus quam, vitae imperdiet tortor enim id erat. Duis ac sapien massa. Suspendisse potenti.</p>
+					</div><!-- #sidebar3 -->
+					<div id="sidebar4">
+						<h3>Sub-subheading</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula, ipsum at placerat ultrices, lectus arcu cursus quam, vitae imperdiet tortor enim id erat. Duis ac sapien massa. Suspendisse potenti. Quisque vehicula risus vitae justo congue imperdiet. Fusce egestas facilisis quam vitae feugiat.</p>
+					</div><!-- #sidebar4 -->
+				</div><!-- .box2 -->
+			</div><!-- .column1 -->
+			<div class="column2">
+				<div id="main" role="main">
+					<h2>Subheading</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula, ipsum at placerat ultrices, lectus arcu cursus quam, vitae imperdiet tortor enim id erat. Duis ac sapien massa. Suspendisse potenti. Quisque vehicula risus vitae justo congue imperdiet. Fusce egestas facilisis quam vitae feugiat.</p>
+					<p>Sed eros magna, faucibus a ornare quis, faucibus nec lacus. Vivamus adipiscing pretium dolor, in eleifend eros euismod sit amet. Donec congue auctor ultricies. Duis eget faucibus felis. Cras mattis, magna sit amet condimentum molestie, magna mi elementum nulla, sit amet consequat erat neque sagittis arcu.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula, ipsum at placerat ultrices, lectus arcu cursus quam, vitae imperdiet tortor enim id erat. Duis ac sapien massa. Suspendisse potenti. Quisque vehicula risus vitae justo congue imperdiet. Fusce egestas facilisis quam vitae feugiat.</p>
+				</div><!-- #main -->
+			</div><!-- column2 -->
+		</main>
+		<footer id="footer" role="contentinfo">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula, ipsum at placerat ultrices, lectus arcu cursus quam, vitae imperdiet tortor enim id erat.</p>
+		</footer>
+	</div><!-- #container -->
+</body>
+<!-- FlexBox Coding by Andrew Brough -->
+</html>

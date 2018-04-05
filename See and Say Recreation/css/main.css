@@ -1,0 +1,8 @@
+@charset "utf-8";
+body {
+    width: 960px;
+    margin: 400px auto;
+    position:relative;
+    left: 200px;
+    background-color: yellow;
+}
